@@ -1,7 +1,20 @@
-import pygame as py
-from jogo.config.Menu import Menu
+from jogo.core.Menu import Menu
+from jogo.core.Game import Game
 
 class Main:
 
-    py.init()
-    Menu().run()
+    def __init__(self):
+        running = True
+
+        while running:
+            result_menu = Menu().run()
+
+            if result_menu == "quit":
+                break
+
+            result_game = Game().run()
+
+            if result_game == "quit":
+                break
+
+Main()
