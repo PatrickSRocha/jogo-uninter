@@ -55,5 +55,4 @@ class Construction_collision:
             Collision(2710, 2560, 60, 60), #3 row 3 column
 
             #npc
-            Collision(3640, 590, 100, 120)
-        ]
+            Collision(3640, 590, 100, 120)]

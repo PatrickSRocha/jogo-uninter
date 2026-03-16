@@ -12,7 +12,6 @@ class Help:
 
         while True:
             for event in py.event.get():
-
                 if event.type == py.QUIT:
                     py.quit()
                     quit()

@@ -1,4 +1,5 @@
 import pygame as py
+from jogo.config.Values import Values
 from jogo.animation.Animation import Animation
 
 class Npc_animation:
@@ -7,8 +8,8 @@ class Npc_animation:
 
         self.animations={}
 
-        idle=py.image.load("jogo_project/jogo/asset/npc/Idle.png").convert_alpha()
-        wave=py.image.load("jogo_project/jogo/asset/npc/wave.png").convert_alpha()
+        idle=py.image.load(Values.npc_idle).convert_alpha()
+        wave=py.image.load(Values.npc_wave).convert_alpha()
 
         self.animations["idle"] = Animation(
             image=idle,

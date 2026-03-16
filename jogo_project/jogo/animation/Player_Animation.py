@@ -1,4 +1,5 @@
 import pygame as py
+from jogo.config.Values import Values
 from jogo.animation.Animation import Animation
 
 class Player_animation:
@@ -7,10 +8,10 @@ class Player_animation:
 
         self.animations={}
 
-        idle=py.image.load("jogo_project/jogo/asset/player/idle.png").convert_alpha()
-        run=py.image.load("jogo_project/jogo/asset/player/run.png").convert_alpha()
-        run_left=py.image.load("jogo_project/jogo/asset/player/run_left.png").convert_alpha()
-        dead=py.image.load("jogo_project/jogo/asset/player/dead.png").convert_alpha()
+        idle=py.image.load(Values.player_idle).convert_alpha()
+        run=py.image.load(Values.player_run).convert_alpha()
+        run_left=py.image.load(Values.player_run_left).convert_alpha()
+        dead=py.image.load(Values.player_deade).convert_alpha()
 
         self.animations["idle"] = Animation(
             image=idle,

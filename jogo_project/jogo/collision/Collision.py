@@ -12,12 +12,4 @@ class Collision:
         self.rect = py.Rect(x, y, w, h)
 
     def draw(self, screen, cam_x, cam_y):
-        py.draw.rect(screen, (255, 0, 0),
-            (
-                self.rect.x - cam_x,
-                self.rect.y - cam_y,
-                self.rect.width,
-                self.rect.height
-            ),
-            2 
-        )
+        py.draw.rect(screen, (255, 0, 0), (self.rect.x - cam_x, self.rect.y - cam_y, self.rect.width, self.rect.height), 2)

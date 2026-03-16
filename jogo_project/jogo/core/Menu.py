@@ -24,7 +24,6 @@ class Menu:
         clock = py.time.Clock()
 
         while True:
-
             for event in py.event.get():
                 if event.type == py.QUIT:
                     return "quit"
@@ -42,6 +41,7 @@ class Menu:
                 if clicked_sound:
                     if self.obj.bt_sound.state:
                         self.obj.ms_menu.stop()
+                        
                     else:
                         self.obj.ms_menu.play()
 

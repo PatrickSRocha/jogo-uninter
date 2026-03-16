@@ -1,20 +1,27 @@
-import pygame as py
-
 class Values:
 
         #window
         window_width=1300
         window_height=800
 
+        #animation ------------------------------------------------------
+        npc_idle="asset/npc/Idle.png"
+        npc_wave="asset/npc/wave.png"
+        
+        #player animations
+        player_idle="asset/player/idle.png"
+        player_run="asset/player/run.png"
+        player_run_left="asset/player/run_left.png"
+        player_deade="asset/player/dead.png"
 
         #menu ------------------------------------------------------
-        background="jogo_project/jogo/asset/background/background_menu.png"
-        sound_up_white="jogo_project/jogo/asset/icons/volume_up_white.png"
-        sound_off_white="jogo_project/jogo/asset/icons/volume_off_white.png"
-        esc="jogo_project/jogo/asset/icons/esc_white.png"
-        help_move="jogo_project/jogo/asset/background/help_move.png"
-        help_interact="jogo_project/jogo/asset/background/help_interact.png"
-        sound_menu="jogo_project/jogo/asset/sound/sound_menu.wav"
+        background="asset/background/background_menu.png"
+        sound_up_white="asset/icons/volume_up_white.png"
+        sound_off_white="asset/icons/volume_off_white.png"
+        esc="asset/icons/esc_white.png"
+        help_move="asset/background/help_move.png"
+        help_interact="asset/background/help_interact.png"
+        sound_menu="asset/sound/sound_menu.wav"
 
         #background efect
         alpha=150
@@ -93,10 +100,10 @@ class Values:
         fps=60
 
         #sound
-        sound_game="jogo_project/jogo/asset/sound/sound_wind.wav"
+        sound_game="asset/sound/sound_wind.wav"
 
         #map
-        img_map="jogo_project/jogo/asset/background/background_map.png"
+        img_map="asset/background/background_map.png"
         width_map=6000
         height_map=4461
         size_map=(width_map, height_map)
